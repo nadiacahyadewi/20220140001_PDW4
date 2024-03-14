@@ -41,21 +41,37 @@ body {
   }
 
   button {
-    background-color: #2f238a; /* Warna latar belakang */
-    border: none; /* Hilangkan border */
-    color: white; /* Warna teks */
-    padding: 15px 32px; /* Padding atas dan bawah 15px, padding kanan dan kiri 32px */
-    text-align: center; /* Teks rata tengah */
-    text-decoration: none; /* Hilangkan dekorasi teks */
-    display: inline-block; /* Tampilkan sebagai elemen inline */
-    font-size: 16px; /* Ukuran teks */
-    margin: 4px 2px; /* Margin atas dan bawah 4px, margin kiri dan kanan 2px */
-    cursor: pointer; /* Tampilkan kursor saat dihover */
-    border-radius: 12px; /* Radius sudut tombol */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    background-color: #2f238a; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
   
   button:hover {
-    background-color: #d546ef; /* Warna latar belakang saat dihover */
+    background-color: #d546ef; 
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .image-center img {
+      width: 80%; 
+      margin: 10px 0; 
+    }
+  
+    h1 {
+      font-size: 36px; 
+    }
   }
   
